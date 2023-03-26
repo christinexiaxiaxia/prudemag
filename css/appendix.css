@@ -1,0 +1,176 @@
+@keyframes back-n-forth {
+	0% {right: 0; opacity: 1}
+	30% {right: 0.5rem; opacity: 1}
+	100% {right: 0; opacity: 1}
+}
+
+@font-face {
+	font-family: editorial-thin;
+	src:  url(../fonts/PPEditorialNew-Thin.woff);
+}
+
+@font-face {
+	font-family: editorial-thin-italic;
+	src:  url(../fonts/PPEditorialNew-ThinItalic.woff);
+}
+
+@font-face {
+	font-family: editorial-ultralight;
+	src:  url(../fonts/PPEditorialNew-Ultralight.woff);
+}
+
+@font-face {
+	font-family: editorial-ultralight-italic;
+	src:  url(../fonts/PPEditorialNew-UltralightItalic.woff);
+}
+
+
+/*STRUCTURE*/
+
+* {
+	font-family: editorial-thin;
+	font-size: 14px;
+	text-align: center;
+
+	color: #ff5588;
+}
+
+body {
+	scroll-behavior: smooth;
+	background-color: #ccc;
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+  height: 1rem;
+  background-color: #ccc;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #ff5588;
+}
+
+::-moz-selection {
+  color: #ccc;
+  background-color: #ff5588;
+}
+::selection {
+  color: #ccc;
+  background-color: #ff5588;
+}
+
+
+
+
+
+.appendix-wrapper {
+	position: absolute;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+
+	width: calc(100vw - 5rem);
+	height: auto;
+	top: 0;
+	left: 0;
+	padding: 2rem;
+}
+
+.item {
+/*	max-width: calc(33vw - 4rem);*/
+/*	height: 12rem;*/
+/*	margin: auto;*/
+	padding: 2rem;
+}
+
+img {
+	position: relative;
+/*	height: 100%;*/
+	height: auto;
+	margin: auto;
+	max-width: calc(33vw - 6rem);
+}
+
+iframe {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+
+
+.wide {
+	grid-column: span 2;
+	max-width: calc(66vw - 6rem);
+}
+
+.text {
+	font-size: 5em;
+	letter-spacing: -0.02em;
+	line-height: 1em;
+	text-align: left;
+	margin: 2rem;
+	padding: 0;
+}
+
+a.text {
+/*	font-size: 4rem;*/
+	letter-spacing: -0.02em;
+	line-height: 1em;
+	text-align: left;
+
+	text-decoration: none;
+}
+
+.green {
+	font-size: 12rem;
+	letter-spacing: -0.02em;
+	line-height: 0.9em;
+
+	color: #aaff88;
+
+	margin: 0;
+	padding: 0;
+}
+
+.intro {
+/*	grid-column: 1 / 3;*/
+}
+
+.end {
+	margin: 0;
+	padding: 0;
+
+	font-family: editorial-ultralight;
+	font-size: 2rem;
+	line-height: 1em;
+	letter-spacing: 0em;
+}
+
+.click {
+	margin: 0;
+	padding: 0;
+
+	font-size: 2rem;
+	letter-spacing: 0em;
+	line-height: 1em;
+	font-family: editorial-ultralight-italic;
+
+	text-decoration: underline;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.1em;
+
+	cursor: alias;
+}
+
+.serious {
+	color: #ff5588;
+	font-family: editorial-thin-italic;
+	font-size: 5rem;
+	letter-spacing: -0.02em;
+/*	line-height: 1em;*/
+	text-align: left;
+}
+
+
+
